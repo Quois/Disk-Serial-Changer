@@ -78,8 +78,8 @@ public:
 	~nt_volume();
 
 	int open_volume(const char* path);
-	int read_sector(uint32_t sector, char* buffer, int sector_size);
-	int write_sector(uint32_t sector, char* buffer, int sector_size);
+	int read_sector(uint64_t sector, char* buffer, int sector_size);
+	int write_sector(uint64_t sector, char* buffer, int sector_size);
 	int close_volume();
 
 private:
